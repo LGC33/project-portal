@@ -1,0 +1,87 @@
+{
+  "version": "2",
+  "flowTitle": "Daily Status Digest",
+  "trigger": {
+    "valid": false,
+    "displayName": "Every day at 9 AM",
+    "type": "PIECE_TRIGGER",
+    "settings": {
+      "pieceName": "@taskade/automade-internalpiece-schedule",
+      "pieceVersion": "BLANK",
+      "triggerName": "schedule.daily",
+      "input": {}
+    }
+  },
+  "actions": [
+    {
+      "name": "a1b2c3d4-e5f6-7890-1234-567890abcdef",
+      "valid": false,
+      "displayName": "Create Daily Digest Message",
+      "type": "PIECE",
+      "settings": {
+        "pieceName": "@taskade/automade-internalpiece-taskade",
+        "pieceVersion": "BLANK",
+        "actionName": "task.create",
+        "input": {
+          "fields": {
+            "@clie9": {
+              "data": {
+                "value": "All Clients"
+              },
+              "rank": "1",
+              "fieldId": "@clie9"
+            },
+            "@from8": {
+              "data": {
+                "value": "Portal System"
+              },
+              "rank": "0",
+              "fieldId": "@from8"
+            },
+            "@msg11": {
+              "data": {
+                "value": "Your daily summary of project updates, new files, and messages"
+              },
+              "rank": "3",
+              "fieldId": "@msg11"
+            },
+            "@read3": {
+              "data": {
+                "value": "opt-unread"
+              },
+              "rank": "5",
+              "fieldId": "@read3"
+            },
+            "@subj0": {
+              "data": {
+                "value": "Daily Activity Summary"
+              },
+              "rank": "2",
+              "fieldId": "@subj0"
+            },
+            "@type2": {
+              "data": {
+                "value": "opt-notif"
+              },
+              "rank": "4",
+              "fieldId": "@type2"
+            }
+          },
+          "content": "Daily digest for {{ trigger[\"triggerTime\"] }}: Project updates and activity summary",
+          "projectId": {
+            "type": "flow-template-variable-input-type",
+            "id": "Xpy6gkXdWBbZnpAT"
+          }
+        }
+      }
+    }
+  ],
+  "variables": {
+    "Xpy6gkXdWBbZnpAT": {
+      "id": "Xpy6gkXdWBbZnpAT",
+      "rank": "V",
+      "type": "string",
+      "format": "taskade-project-id"
+    }
+  }
+}

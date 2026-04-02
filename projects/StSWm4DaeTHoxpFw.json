@@ -1,0 +1,1125 @@
+{
+  "root": {
+    "type": "root",
+    "children": [
+      {
+        "type": "text",
+        "id": "a1b2c3d4-e5f6-7890-abcd-ef1234567890",
+        "text": {
+          "ops": [
+            {
+              "insert": "Client Projects Database"
+            },
+            {
+              "insert": "\n",
+              "attributes": {
+                "paragraph": true
+              }
+            }
+          ]
+        },
+        "format": null,
+        "collapsed": false,
+        "completed": false,
+        "children": [
+          {
+            "type": "text",
+            "id": "d4e5f678-9012-3456-def1-234567890123",
+            "text": {
+              "ops": [
+                {
+                  "insert": "Acme Corp Website Redesign",
+                  "attributes": {}
+                },
+                {
+                  "insert": "\n",
+                  "attributes": {
+                    "paragraph": true
+                  }
+                }
+              ]
+            },
+            "format": {
+              "node": "checkbox",
+              "children": null
+            },
+            "collapsed": false,
+            "completed": false,
+            "attributes": {
+              "@cli01": "Acme Corporation",
+              "@proj2": "Corporate Website Redesign",
+              "@stat3": {
+                "type": "Select",
+                "optionId": "opt-active"
+              },
+              "@prog4": 65,
+              "@due05": {
+                "type": "DateTime",
+                "dateTime": {
+                  "date": "2025-02-15"
+                }
+              },
+              "@budg6": 45000,
+              "@prio7": {
+                "type": "Select",
+                "optionId": "opt-high"
+              }
+            },
+            "children": []
+          },
+          {
+            "type": "text",
+            "id": "e5f67890-1234-5678-ef12-345678901234",
+            "text": {
+              "ops": [
+                {
+                  "insert": "TechStart Mobile App Development",
+                  "attributes": {}
+                },
+                {
+                  "insert": "\n",
+                  "attributes": {
+                    "paragraph": true
+                  }
+                }
+              ]
+            },
+            "format": {
+              "node": "checkbox",
+              "children": null
+            },
+            "collapsed": false,
+            "completed": false,
+            "attributes": {
+              "@cli01": "TechStart Inc",
+              "@proj2": "iOS & Android Mobile App",
+              "@stat3": {
+                "type": "Select",
+                "optionId": "opt-active"
+              },
+              "@prog4": 85,
+              "@due05": {
+                "type": "DateTime",
+                "dateTime": {
+                  "date": "2025-01-30"
+                }
+              },
+              "@budg6": 78000,
+              "@prio7": {
+                "type": "Select",
+                "optionId": "opt-high"
+              }
+            },
+            "children": []
+          },
+          {
+            "type": "text",
+            "id": "f6789012-3456-7890-f123-456789012345",
+            "text": {
+              "ops": [
+                {
+                  "insert": "Greenfield Brand Identity Package",
+                  "attributes": {}
+                },
+                {
+                  "insert": "\n",
+                  "attributes": {
+                    "paragraph": true
+                  }
+                }
+              ]
+            },
+            "format": {
+              "node": "checkbox",
+              "children": null
+            },
+            "collapsed": false,
+            "completed": false,
+            "attributes": {
+              "@cli01": "Greenfield Organics",
+              "@proj2": "Complete Brand Identity & Guidelines",
+              "@stat3": {
+                "type": "Select",
+                "optionId": "opt-active"
+              },
+              "@prog4": 100,
+              "@due05": {
+                "type": "DateTime",
+                "dateTime": {
+                  "date": "2025-01-10"
+                }
+              },
+              "@budg6": 22000,
+              "@prio7": {
+                "type": "Select",
+                "optionId": "opt-med"
+              }
+            },
+            "children": []
+          },
+          {
+            "type": "text",
+            "id": "a7890123-4567-8901-a234-567890123456",
+            "text": {
+              "ops": [
+                {
+                  "insert": "FinanceHub Dashboard Migration",
+                  "attributes": {}
+                },
+                {
+                  "insert": "\n",
+                  "attributes": {
+                    "paragraph": true
+                  }
+                }
+              ]
+            },
+            "format": {
+              "node": "checkbox",
+              "children": null
+            },
+            "collapsed": false,
+            "completed": false,
+            "attributes": {
+              "@cli01": "FinanceHub Solutions",
+              "@proj2": "Cloud Platform Migration",
+              "@stat3": {
+                "type": "Select",
+                "optionId": "opt-active"
+              },
+              "@prog4": 15,
+              "@due05": {
+                "type": "DateTime",
+                "dateTime": {
+                  "date": "2025-03-20"
+                }
+              },
+              "@budg6": 120000,
+              "@prio7": {
+                "type": "Select",
+                "optionId": "opt-high"
+              }
+            },
+            "children": []
+          },
+          {
+            "type": "text",
+            "id": "b8901234-5678-9012-b345-678901234567",
+            "text": {
+              "ops": [
+                {
+                  "insert": "EduLearn Content Management System",
+                  "attributes": {}
+                },
+                {
+                  "insert": "\n",
+                  "attributes": {
+                    "paragraph": true
+                  }
+                }
+              ]
+            },
+            "format": {
+              "node": "checkbox",
+              "children": null
+            },
+            "collapsed": false,
+            "completed": false,
+            "attributes": {
+              "@cli01": "EduLearn Platform",
+              "@proj2": "Custom CMS Development",
+              "@stat3": {
+                "type": "Select",
+                "optionId": "opt-active"
+              },
+              "@prog4": 42,
+              "@due05": {
+                "type": "DateTime",
+                "dateTime": {
+                  "date": "2025-02-28"
+                }
+              },
+              "@budg6": 56000,
+              "@prio7": {
+                "type": "Select",
+                "optionId": "opt-med"
+              }
+            },
+            "children": []
+          },
+          {
+            "type": "text",
+            "id": "c9012345-6789-0123-c456-789012345678",
+            "text": {
+              "ops": [
+                {
+                  "insert": "RetailPro E-commerce Integration",
+                  "attributes": {}
+                },
+                {
+                  "insert": "\n",
+                  "attributes": {
+                    "paragraph": true
+                  }
+                }
+              ]
+            },
+            "format": {
+              "node": "checkbox",
+              "children": null
+            },
+            "collapsed": false,
+            "completed": false,
+            "attributes": {
+              "@cli01": "RetailPro Systems",
+              "@proj2": "Shopify to Custom Platform Migration",
+              "@stat3": {
+                "type": "Select",
+                "optionId": "opt-active"
+              },
+              "@prog4": 28,
+              "@due05": {
+                "type": "DateTime",
+                "dateTime": {
+                  "date": "2025-04-15"
+                }
+              },
+              "@budg6": 32000,
+              "@prio7": {
+                "type": "Select",
+                "optionId": "opt-low"
+              }
+            },
+            "children": []
+          }
+        ]
+      }
+    ],
+    "fields": {
+      "@cli01": {
+        "displayName": "Client Name",
+        "type": "string"
+      },
+      "@proj2": {
+        "displayName": "Project Title",
+        "type": "string"
+      },
+      "@stat3": {
+        "displayName": "Status",
+        "type": "Select",
+        "options": {
+          "opt-planning": {
+            "id": "opt-planning",
+            "name": "Planning",
+            "rank": "0",
+            "color": "#94a3b8"
+          },
+          "opt-active": {
+            "id": "opt-active",
+            "name": "In Progress",
+            "rank": "1",
+            "color": "#3b82f6"
+          },
+          "opt-review": {
+            "id": "opt-review",
+            "name": "Under Review",
+            "rank": "2",
+            "color": "#f59e0b"
+          },
+          "opt-complete": {
+            "id": "opt-complete",
+            "name": "Completed",
+            "rank": "3",
+            "color": "#10b981"
+          },
+          "opt-hold": {
+            "id": "opt-hold",
+            "name": "On Hold",
+            "rank": "4",
+            "color": "#ef4444"
+          }
+        }
+      },
+      "@prog4": {
+        "displayName": "Progress %",
+        "type": "number",
+        "render": {
+          "type": "text"
+        },
+        "format": {
+          "type": "unit",
+          "config": {
+            "type": "standard",
+            "unit": "percent"
+          }
+        }
+      },
+      "@due05": {
+        "type": "DateTime",
+        "title": "Due Date"
+      },
+      "@budg6": {
+        "displayName": "Budget",
+        "type": "number",
+        "render": {
+          "type": "text"
+        },
+        "format": {
+          "type": "currency",
+          "config": {
+            "type": "standard",
+            "code": "USD"
+          }
+        }
+      },
+      "@prio7": {
+        "displayName": "Priority",
+        "type": "Select",
+        "options": {
+          "opt-low": {
+            "id": "opt-low",
+            "name": "Low",
+            "rank": "0",
+            "color": "#94a3b8"
+          },
+          "opt-med": {
+            "id": "opt-med",
+            "name": "Medium",
+            "rank": "1",
+            "color": "#f59e0b"
+          },
+          "opt-high": {
+            "id": "opt-high",
+            "name": "High",
+            "rank": "2",
+            "color": "#ef4444"
+          }
+        }
+      }
+    },
+    "views": {
+      "list": {
+        "id": "list",
+        "type": "list",
+        "rank": "A",
+        "displayedFields": {
+          "/text": {
+            "id": "/text",
+            "fieldPath": "/text",
+            "rank": "7"
+          },
+          "/attributes/agent": {
+            "id": "/attributes/agent",
+            "fieldPath": "/attributes/agent",
+            "rank": "A"
+          },
+          "/attributes/date": {
+            "id": "/attributes/date",
+            "fieldPath": "/attributes/date",
+            "rank": "F"
+          },
+          "/attributes/assignee": {
+            "id": "/attributes/assignee",
+            "fieldPath": "/attributes/assignee",
+            "rank": "N"
+          },
+          "/attributes/comment": {
+            "id": "/attributes/comment",
+            "fieldPath": "/attributes/comment",
+            "rank": "V"
+          },
+          "/attributes/reaction": {
+            "id": "/attributes/reaction",
+            "fieldPath": "/attributes/reaction",
+            "rank": "c"
+          },
+          "/attributes/timer": {
+            "id": "/attributes/timer",
+            "fieldPath": "/attributes/timer",
+            "rank": "k"
+          },
+          "/attributes/media": {
+            "id": "/attributes/media",
+            "fieldPath": "/attributes/media",
+            "rank": "s"
+          },
+          "/attributes/created/at": {
+            "id": "/attributes/created/at",
+            "fieldPath": "/attributes/created/at",
+            "rank": "t"
+          },
+          "/attributes/created/by": {
+            "id": "/attributes/created/by",
+            "fieldPath": "/attributes/created/by",
+            "rank": "u"
+          },
+          "/attributes/updated/at": {
+            "id": "/attributes/updated/at",
+            "fieldPath": "/attributes/updated/at",
+            "rank": "vF"
+          },
+          "/attributes/updated/by": {
+            "id": "/attributes/updated/by",
+            "fieldPath": "/attributes/updated/by",
+            "rank": "wF"
+          },
+          "/attributes/completed/at": {
+            "id": "/attributes/completed/at",
+            "fieldPath": "/attributes/completed/at",
+            "rank": "x"
+          },
+          "/attributes/completed/by": {
+            "id": "/attributes/completed/by",
+            "fieldPath": "/attributes/completed/by",
+            "rank": "y"
+          },
+          "/attributes/@cli01": {
+            "id": "/attributes/@cli01",
+            "fieldPath": "/attributes/@cli01",
+            "rank": "z"
+          },
+          "/attributes/@proj2": {
+            "id": "/attributes/@proj2",
+            "fieldPath": "/attributes/@proj2",
+            "rank": "zV"
+          },
+          "/attributes/@stat3": {
+            "id": "/attributes/@stat3",
+            "fieldPath": "/attributes/@stat3",
+            "rank": "zk"
+          },
+          "/attributes/@prog4": {
+            "id": "/attributes/@prog4",
+            "fieldPath": "/attributes/@prog4",
+            "rank": "zs"
+          },
+          "/attributes/@due05": {
+            "id": "/attributes/@due05",
+            "fieldPath": "/attributes/@due05",
+            "rank": "zw"
+          },
+          "/attributes/@budg6": {
+            "id": "/attributes/@budg6",
+            "fieldPath": "/attributes/@budg6",
+            "rank": "zy"
+          },
+          "/attributes/@prio7": {
+            "id": "/attributes/@prio7",
+            "fieldPath": "/attributes/@prio7",
+            "rank": "zz"
+          }
+        }
+      },
+      "board": {
+        "id": "board",
+        "type": "board",
+        "rank": "B",
+        "displayedFields": {
+          "/text": {
+            "id": "/text",
+            "fieldPath": "/text",
+            "rank": "7"
+          },
+          "/attributes/agent": {
+            "id": "/attributes/agent",
+            "fieldPath": "/attributes/agent",
+            "rank": "A"
+          },
+          "/attributes/date": {
+            "id": "/attributes/date",
+            "fieldPath": "/attributes/date",
+            "rank": "F"
+          },
+          "/attributes/assignee": {
+            "id": "/attributes/assignee",
+            "fieldPath": "/attributes/assignee",
+            "rank": "N"
+          },
+          "/attributes/comment": {
+            "id": "/attributes/comment",
+            "fieldPath": "/attributes/comment",
+            "rank": "V"
+          },
+          "/attributes/reaction": {
+            "id": "/attributes/reaction",
+            "fieldPath": "/attributes/reaction",
+            "rank": "c"
+          },
+          "/attributes/timer": {
+            "id": "/attributes/timer",
+            "fieldPath": "/attributes/timer",
+            "rank": "k"
+          },
+          "/attributes/media": {
+            "id": "/attributes/media",
+            "fieldPath": "/attributes/media",
+            "rank": "s"
+          },
+          "/attributes/created/at": {
+            "id": "/attributes/created/at",
+            "fieldPath": "/attributes/created/at",
+            "rank": "t"
+          },
+          "/attributes/created/by": {
+            "id": "/attributes/created/by",
+            "fieldPath": "/attributes/created/by",
+            "rank": "u"
+          },
+          "/attributes/updated/at": {
+            "id": "/attributes/updated/at",
+            "fieldPath": "/attributes/updated/at",
+            "rank": "vF"
+          },
+          "/attributes/updated/by": {
+            "id": "/attributes/updated/by",
+            "fieldPath": "/attributes/updated/by",
+            "rank": "wF"
+          },
+          "/attributes/completed/at": {
+            "id": "/attributes/completed/at",
+            "fieldPath": "/attributes/completed/at",
+            "rank": "x"
+          },
+          "/attributes/completed/by": {
+            "id": "/attributes/completed/by",
+            "fieldPath": "/attributes/completed/by",
+            "rank": "y"
+          },
+          "/attributes/@cli01": {
+            "id": "/attributes/@cli01",
+            "fieldPath": "/attributes/@cli01",
+            "rank": "z"
+          },
+          "/attributes/@proj2": {
+            "id": "/attributes/@proj2",
+            "fieldPath": "/attributes/@proj2",
+            "rank": "zV"
+          },
+          "/attributes/@stat3": {
+            "id": "/attributes/@stat3",
+            "fieldPath": "/attributes/@stat3",
+            "rank": "zk"
+          },
+          "/attributes/@prog4": {
+            "id": "/attributes/@prog4",
+            "fieldPath": "/attributes/@prog4",
+            "rank": "zs"
+          },
+          "/attributes/@due05": {
+            "id": "/attributes/@due05",
+            "fieldPath": "/attributes/@due05",
+            "rank": "zw"
+          },
+          "/attributes/@budg6": {
+            "id": "/attributes/@budg6",
+            "fieldPath": "/attributes/@budg6",
+            "rank": "zy"
+          },
+          "/attributes/@prio7": {
+            "id": "/attributes/@prio7",
+            "fieldPath": "/attributes/@prio7",
+            "rank": "zz"
+          }
+        }
+      },
+      "mindmap": {
+        "id": "mindmap",
+        "type": "mindmap",
+        "rank": "D",
+        "displayedFields": {
+          "/text": {
+            "id": "/text",
+            "fieldPath": "/text",
+            "rank": "7"
+          },
+          "/attributes/agent": {
+            "id": "/attributes/agent",
+            "fieldPath": "/attributes/agent",
+            "rank": "A"
+          },
+          "/attributes/date": {
+            "id": "/attributes/date",
+            "fieldPath": "/attributes/date",
+            "rank": "F"
+          },
+          "/attributes/assignee": {
+            "id": "/attributes/assignee",
+            "fieldPath": "/attributes/assignee",
+            "rank": "N"
+          },
+          "/attributes/comment": {
+            "id": "/attributes/comment",
+            "fieldPath": "/attributes/comment",
+            "rank": "V"
+          },
+          "/attributes/reaction": {
+            "id": "/attributes/reaction",
+            "fieldPath": "/attributes/reaction",
+            "rank": "c"
+          },
+          "/attributes/timer": {
+            "id": "/attributes/timer",
+            "fieldPath": "/attributes/timer",
+            "rank": "k"
+          },
+          "/attributes/media": {
+            "id": "/attributes/media",
+            "fieldPath": "/attributes/media",
+            "rank": "s"
+          },
+          "/attributes/created/at": {
+            "id": "/attributes/created/at",
+            "fieldPath": "/attributes/created/at",
+            "rank": "t"
+          },
+          "/attributes/created/by": {
+            "id": "/attributes/created/by",
+            "fieldPath": "/attributes/created/by",
+            "rank": "u"
+          },
+          "/attributes/updated/at": {
+            "id": "/attributes/updated/at",
+            "fieldPath": "/attributes/updated/at",
+            "rank": "vF"
+          },
+          "/attributes/updated/by": {
+            "id": "/attributes/updated/by",
+            "fieldPath": "/attributes/updated/by",
+            "rank": "wF"
+          },
+          "/attributes/completed/at": {
+            "id": "/attributes/completed/at",
+            "fieldPath": "/attributes/completed/at",
+            "rank": "x"
+          },
+          "/attributes/completed/by": {
+            "id": "/attributes/completed/by",
+            "fieldPath": "/attributes/completed/by",
+            "rank": "y"
+          },
+          "/attributes/@cli01": {
+            "id": "/attributes/@cli01",
+            "fieldPath": "/attributes/@cli01",
+            "rank": "z"
+          },
+          "/attributes/@proj2": {
+            "id": "/attributes/@proj2",
+            "fieldPath": "/attributes/@proj2",
+            "rank": "zV"
+          },
+          "/attributes/@stat3": {
+            "id": "/attributes/@stat3",
+            "fieldPath": "/attributes/@stat3",
+            "rank": "zk"
+          },
+          "/attributes/@prog4": {
+            "id": "/attributes/@prog4",
+            "fieldPath": "/attributes/@prog4",
+            "rank": "zs"
+          },
+          "/attributes/@due05": {
+            "id": "/attributes/@due05",
+            "fieldPath": "/attributes/@due05",
+            "rank": "zw"
+          },
+          "/attributes/@budg6": {
+            "id": "/attributes/@budg6",
+            "fieldPath": "/attributes/@budg6",
+            "rank": "zy"
+          },
+          "/attributes/@prio7": {
+            "id": "/attributes/@prio7",
+            "fieldPath": "/attributes/@prio7",
+            "rank": "zz"
+          }
+        }
+      },
+      "orgchart": {
+        "id": "orgchart",
+        "type": "orgchart",
+        "rank": "E",
+        "displayedFields": {
+          "/text": {
+            "id": "/text",
+            "fieldPath": "/text",
+            "rank": "7"
+          },
+          "/attributes/agent": {
+            "id": "/attributes/agent",
+            "fieldPath": "/attributes/agent",
+            "rank": "A"
+          },
+          "/attributes/date": {
+            "id": "/attributes/date",
+            "fieldPath": "/attributes/date",
+            "rank": "F"
+          },
+          "/attributes/assignee": {
+            "id": "/attributes/assignee",
+            "fieldPath": "/attributes/assignee",
+            "rank": "N"
+          },
+          "/attributes/comment": {
+            "id": "/attributes/comment",
+            "fieldPath": "/attributes/comment",
+            "rank": "V"
+          },
+          "/attributes/reaction": {
+            "id": "/attributes/reaction",
+            "fieldPath": "/attributes/reaction",
+            "rank": "c"
+          },
+          "/attributes/timer": {
+            "id": "/attributes/timer",
+            "fieldPath": "/attributes/timer",
+            "rank": "k"
+          },
+          "/attributes/media": {
+            "id": "/attributes/media",
+            "fieldPath": "/attributes/media",
+            "rank": "s"
+          },
+          "/attributes/created/at": {
+            "id": "/attributes/created/at",
+            "fieldPath": "/attributes/created/at",
+            "rank": "t"
+          },
+          "/attributes/created/by": {
+            "id": "/attributes/created/by",
+            "fieldPath": "/attributes/created/by",
+            "rank": "u"
+          },
+          "/attributes/updated/at": {
+            "id": "/attributes/updated/at",
+            "fieldPath": "/attributes/updated/at",
+            "rank": "vF"
+          },
+          "/attributes/updated/by": {
+            "id": "/attributes/updated/by",
+            "fieldPath": "/attributes/updated/by",
+            "rank": "wF"
+          },
+          "/attributes/completed/at": {
+            "id": "/attributes/completed/at",
+            "fieldPath": "/attributes/completed/at",
+            "rank": "x"
+          },
+          "/attributes/completed/by": {
+            "id": "/attributes/completed/by",
+            "fieldPath": "/attributes/completed/by",
+            "rank": "y"
+          },
+          "/attributes/@cli01": {
+            "id": "/attributes/@cli01",
+            "fieldPath": "/attributes/@cli01",
+            "rank": "z"
+          },
+          "/attributes/@proj2": {
+            "id": "/attributes/@proj2",
+            "fieldPath": "/attributes/@proj2",
+            "rank": "zV"
+          },
+          "/attributes/@stat3": {
+            "id": "/attributes/@stat3",
+            "fieldPath": "/attributes/@stat3",
+            "rank": "zk"
+          },
+          "/attributes/@prog4": {
+            "id": "/attributes/@prog4",
+            "fieldPath": "/attributes/@prog4",
+            "rank": "zs"
+          },
+          "/attributes/@due05": {
+            "id": "/attributes/@due05",
+            "fieldPath": "/attributes/@due05",
+            "rank": "zw"
+          },
+          "/attributes/@budg6": {
+            "id": "/attributes/@budg6",
+            "fieldPath": "/attributes/@budg6",
+            "rank": "zy"
+          },
+          "/attributes/@prio7": {
+            "id": "/attributes/@prio7",
+            "fieldPath": "/attributes/@prio7",
+            "rank": "zz"
+          }
+        }
+      },
+      "gantt": {
+        "id": "gantt",
+        "type": "gantt",
+        "rank": "F",
+        "columns": {
+          "/text": {
+            "id": "/text",
+            "fieldPath": "/text",
+            "rank": "7",
+            "width": 480
+          },
+          "/attributes/agent": {
+            "id": "/attributes/agent",
+            "fieldPath": "/attributes/agent",
+            "rank": "A",
+            "hidden": true
+          },
+          "/attributes/date": {
+            "id": "/attributes/date",
+            "fieldPath": "/attributes/date",
+            "rank": "F",
+            "hidden": true
+          },
+          "/attributes/assignee": {
+            "id": "/attributes/assignee",
+            "fieldPath": "/attributes/assignee",
+            "rank": "N",
+            "hidden": true
+          },
+          "/attributes/comment": {
+            "id": "/attributes/comment",
+            "fieldPath": "/attributes/comment",
+            "rank": "V",
+            "hidden": true
+          },
+          "/attributes/reaction": {
+            "id": "/attributes/reaction",
+            "fieldPath": "/attributes/reaction",
+            "rank": "c",
+            "hidden": true
+          },
+          "/attributes/timer": {
+            "id": "/attributes/timer",
+            "fieldPath": "/attributes/timer",
+            "rank": "k",
+            "hidden": true
+          },
+          "/attributes/media": {
+            "id": "/attributes/media",
+            "fieldPath": "/attributes/media",
+            "rank": "s",
+            "hidden": true
+          },
+          "/attributes/created/at": {
+            "id": "/attributes/created/at",
+            "fieldPath": "/attributes/created/at",
+            "rank": "t",
+            "hidden": true
+          },
+          "/attributes/created/by": {
+            "id": "/attributes/created/by",
+            "fieldPath": "/attributes/created/by",
+            "rank": "u",
+            "hidden": true
+          },
+          "/attributes/updated/at": {
+            "id": "/attributes/updated/at",
+            "fieldPath": "/attributes/updated/at",
+            "rank": "vF",
+            "hidden": true
+          },
+          "/attributes/updated/by": {
+            "id": "/attributes/updated/by",
+            "fieldPath": "/attributes/updated/by",
+            "rank": "wF",
+            "hidden": true
+          },
+          "/attributes/completed/at": {
+            "id": "/attributes/completed/at",
+            "fieldPath": "/attributes/completed/at",
+            "rank": "x",
+            "hidden": true
+          },
+          "/attributes/completed/by": {
+            "id": "/attributes/completed/by",
+            "fieldPath": "/attributes/completed/by",
+            "rank": "y",
+            "hidden": true
+          },
+          "/attributes/@cli01": {
+            "id": "/attributes/@cli01",
+            "fieldPath": "/attributes/@cli01",
+            "rank": "z",
+            "hidden": false
+          },
+          "/attributes/@proj2": {
+            "id": "/attributes/@proj2",
+            "fieldPath": "/attributes/@proj2",
+            "rank": "zV",
+            "hidden": false
+          },
+          "/attributes/@stat3": {
+            "id": "/attributes/@stat3",
+            "fieldPath": "/attributes/@stat3",
+            "rank": "zk",
+            "hidden": false
+          },
+          "/attributes/@prog4": {
+            "id": "/attributes/@prog4",
+            "fieldPath": "/attributes/@prog4",
+            "rank": "zs",
+            "hidden": false
+          },
+          "/attributes/@due05": {
+            "id": "/attributes/@due05",
+            "fieldPath": "/attributes/@due05",
+            "rank": "zw",
+            "hidden": false
+          },
+          "/attributes/@budg6": {
+            "id": "/attributes/@budg6",
+            "fieldPath": "/attributes/@budg6",
+            "rank": "zy",
+            "hidden": false
+          },
+          "/attributes/@prio7": {
+            "id": "/attributes/@prio7",
+            "fieldPath": "/attributes/@prio7",
+            "rank": "zz",
+            "hidden": false
+          }
+        }
+      },
+      "table": {
+        "id": "table",
+        "type": "table",
+        "rank": "V",
+        "columns": {
+          "/text": {
+            "id": "/text",
+            "fieldPath": "/text",
+            "rank": "7",
+            "width": 370
+          },
+          "/attributes/agent": {
+            "id": "/attributes/agent",
+            "fieldPath": "/attributes/agent",
+            "rank": "A",
+            "hidden": true
+          },
+          "/attributes/date": {
+            "id": "/attributes/date",
+            "fieldPath": "/attributes/date",
+            "rank": "F",
+            "hidden": true
+          },
+          "/attributes/assignee": {
+            "id": "/attributes/assignee",
+            "fieldPath": "/attributes/assignee",
+            "rank": "N",
+            "hidden": true
+          },
+          "/attributes/comment": {
+            "id": "/attributes/comment",
+            "fieldPath": "/attributes/comment",
+            "rank": "V",
+            "hidden": true
+          },
+          "/attributes/reaction": {
+            "id": "/attributes/reaction",
+            "fieldPath": "/attributes/reaction",
+            "rank": "c",
+            "hidden": true
+          },
+          "/attributes/timer": {
+            "id": "/attributes/timer",
+            "fieldPath": "/attributes/timer",
+            "rank": "k",
+            "hidden": true
+          },
+          "/attributes/media": {
+            "id": "/attributes/media",
+            "fieldPath": "/attributes/media",
+            "rank": "s",
+            "hidden": true
+          },
+          "/attributes/created/at": {
+            "id": "/attributes/created/at",
+            "fieldPath": "/attributes/created/at",
+            "rank": "t",
+            "hidden": true
+          },
+          "/attributes/created/by": {
+            "id": "/attributes/created/by",
+            "fieldPath": "/attributes/created/by",
+            "rank": "u",
+            "hidden": true
+          },
+          "/attributes/updated/at": {
+            "id": "/attributes/updated/at",
+            "fieldPath": "/attributes/updated/at",
+            "rank": "vF",
+            "hidden": true
+          },
+          "/attributes/updated/by": {
+            "id": "/attributes/updated/by",
+            "fieldPath": "/attributes/updated/by",
+            "rank": "wF",
+            "hidden": true
+          },
+          "/attributes/completed/at": {
+            "id": "/attributes/completed/at",
+            "fieldPath": "/attributes/completed/at",
+            "rank": "x",
+            "hidden": true
+          },
+          "/attributes/completed/by": {
+            "id": "/attributes/completed/by",
+            "fieldPath": "/attributes/completed/by",
+            "rank": "y",
+            "hidden": true
+          },
+          "/attributes/@cli01": {
+            "id": "/attributes/@cli01",
+            "fieldPath": "/attributes/@cli01",
+            "rank": "z",
+            "hidden": false
+          },
+          "/attributes/@proj2": {
+            "id": "/attributes/@proj2",
+            "fieldPath": "/attributes/@proj2",
+            "rank": "zV",
+            "hidden": false
+          },
+          "/attributes/@stat3": {
+            "id": "/attributes/@stat3",
+            "fieldPath": "/attributes/@stat3",
+            "rank": "zk",
+            "hidden": false
+          },
+          "/attributes/@prog4": {
+            "id": "/attributes/@prog4",
+            "fieldPath": "/attributes/@prog4",
+            "rank": "zs",
+            "hidden": false
+          },
+          "/attributes/@due05": {
+            "id": "/attributes/@due05",
+            "fieldPath": "/attributes/@due05",
+            "rank": "zw",
+            "hidden": false
+          },
+          "/attributes/@budg6": {
+            "id": "/attributes/@budg6",
+            "fieldPath": "/attributes/@budg6",
+            "rank": "zy",
+            "hidden": false
+          },
+          "/attributes/@prio7": {
+            "id": "/attributes/@prio7",
+            "fieldPath": "/attributes/@prio7",
+            "rank": "zz",
+            "hidden": false
+          }
+        },
+        "rowHeight": "xl"
+      }
+    }
+  },
+  "preferences": {
+    "defaultView": "table",
+    "avatar": {
+      "type": "emoji",
+      "value": "🎓"
+    }
+  }
+}

@@ -1,0 +1,486 @@
+{
+  "version": "2",
+  "flowTitle": "HubSpot Lead Intelligence System",
+  "trigger": {
+    "valid": false,
+    "displayName": "New HubSpot Contact Created",
+    "type": "PIECE_TRIGGER",
+    "settings": {
+      "pieceName": "@taskade/automade-piece-hubspot",
+      "pieceVersion": "BLANK",
+      "triggerName": "new_contact_created",
+      "input": {}
+    }
+  },
+  "actions": [
+    {
+      "name": "a1b2c3d4-e5f6-7890-abcd-ef1234567890",
+      "valid": true,
+      "displayName": "AI Lead Analysis",
+      "type": "PIECE",
+      "settings": {
+        "pieceName": "@taskade/automade-internalpiece-openai",
+        "pieceVersion": "BLANK",
+        "actionName": "ai.categorize",
+        "input": {
+          "input": "Contact: {{ trigger[\"firstName\"] }} {{ trigger[\"lastName\"] }}\nEmail: {{ trigger[\"email\"] }}\nJob Title: {{ trigger[\"jobTitle\"] }}\nPhone: {{ trigger[\"phoneNumber\"] }}\nLifecycle: {{ trigger[\"lifecycleStage\"] }}\nStatus: {{ trigger[\"leadStatus\"] }}",
+          "output": {
+            "type": "custom",
+            "schema": {
+              "type": "object",
+              "required": [
+                "leadQuality",
+                "industry",
+                "urgency",
+                "recommendedAction",
+                "estimatedBudget"
+              ],
+              "properties": {
+                "urgency": {
+                  "enum": [
+                    "immediate",
+                    "normal",
+                    "low"
+                  ],
+                  "type": "string",
+                  "description": "How quickly this lead should be contacted"
+                },
+                "industry": {
+                  "type": "string",
+                  "description": "Estimated industry based on job title and context"
+                },
+                "leadQuality": {
+                  "enum": [
+                    "high",
+                    "medium",
+                    "low"
+                  ],
+                  "type": "string",
+                  "description": "Overall quality assessment of this lead"
+                },
+                "estimatedBudget": {
+                  "enum": [
+                    "enterprise",
+                    "mid-market",
+                    "small-business",
+                    "unknown"
+                  ],
+                  "type": "string",
+                  "description": "Estimated budget tier"
+                },
+                "recommendedAction": {
+                  "type": "string",
+                  "description": "Specific next step recommendation"
+                }
+              }
+            }
+          }
+        }
+      }
+    },
+    {
+      "name": "b1a2c3d4-e5f6-7890-abcd-ef1234567891",
+      "valid": true,
+      "displayName": "Route by Lead Quality",
+      "type": "BRANCH",
+      "settings": {},
+      "paths": [
+        {
+          "name": "c1a2b3d4-e5f6-7890-abcd-ef1234567892",
+          "valid": true,
+          "displayName": "🔥 High-Quality Lead",
+          "type": "BRANCH_PATH",
+          "settings": {
+            "ruleset": {
+              "type": "CUSTOM",
+              "input": {
+                "type": "or",
+                "value": [
+                  {
+                    "type": "and",
+                    "value": [
+                      {
+                        "condition": "text_matches",
+                        "id": "cc704596-5216-4aa7-acf7-7f05b5eabbc6",
+                        "data": "{{ a1b2c3d4-e5f6-7890-abcd-ef1234567890[\"leadQuality\"] }}",
+                        "comparator": "high"
+                      }
+                    ]
+                  }
+                ]
+              }
+            }
+          },
+          "actions": [
+            {
+              "name": "d1a2b3c4-e5f6-7890-abcd-ef1234567893",
+              "valid": false,
+              "displayName": "Create High-Priority Client Task",
+              "type": "PIECE",
+              "settings": {
+                "pieceName": "@taskade/automade-internalpiece-taskade",
+                "pieceVersion": "BLANK",
+                "actionName": "task.create",
+                "input": {
+                  "fields": {
+                    "@cli01": {
+                      "data": {
+                        "value": "{{ trigger[\"firstName\"] }} {{ trigger[\"lastName\"] }}"
+                      },
+                      "rank": "0",
+                      "fieldId": "@cli01"
+                    },
+                    "@prio7": {
+                      "data": {
+                        "value": "opt-high"
+                      },
+                      "rank": "3",
+                      "fieldId": "@prio7"
+                    },
+                    "@proj2": {
+                      "data": {
+                        "value": "{{ a1b2c3d4-e5f6-7890-abcd-ef1234567890[\"industry\"] }}"
+                      },
+                      "rank": "1",
+                      "fieldId": "@proj2"
+                    },
+                    "@stat3": {
+                      "data": {
+                        "value": "opt-planning"
+                      },
+                      "rank": "2",
+                      "fieldId": "@stat3"
+                    }
+                  },
+                  "content": "🔥 PRIORITY: {{ trigger[\"firstName\"] }} {{ trigger[\"lastName\"] }} - {{ a1b2c3d4-e5f6-7890-abcd-ef1234567890[\"industry\"] }}",
+                  "position": "afterbegin",
+                  "projectId": {
+                    "type": "flow-template-variable-input-type",
+                    "id": "StSWm4DaeTHoxpFw"
+                  }
+                }
+              }
+            },
+            {
+              "name": "e1a2b3c4-d5f6-7890-abcd-ef1234567894",
+              "valid": true,
+              "displayName": "Generate Personalized Outreach",
+              "type": "PIECE",
+              "settings": {
+                "pieceName": "@taskade/automade-internalpiece-openai",
+                "pieceVersion": "BLANK",
+                "actionName": "ai.generate",
+                "input": {
+                  "input": "Lead Name: {{ trigger[\"firstName\"] }} {{ trigger[\"lastName\"] }}\nJob Title: {{ trigger[\"jobTitle\"] }}\nIndustry: {{ a1b2c3d4-e5f6-7890-abcd-ef1234567890[\"industry\"] }}\nBudget Tier: {{ a1b2c3d4-e5f6-7890-abcd-ef1234567890[\"estimatedBudget\"] }}\nRecommended Action: {{ a1b2c3d4-e5f6-7890-abcd-ef1234567890[\"recommendedAction\"] }}",
+                  "prompt": "Create a highly personalized, professional outreach email for a high-value lead. Be warm, consultative, and specific to their industry. Keep it concise (3-4 paragraphs)."
+                }
+              }
+            },
+            {
+              "name": "f1a2b3c4-d5e6-7890-abcd-ef1234567895",
+              "valid": false,
+              "displayName": "Add Outreach Note to Task",
+              "type": "PIECE",
+              "settings": {
+                "pieceName": "@taskade/automade-internalpiece-taskade",
+                "pieceVersion": "BLANK",
+                "actionName": "task.create",
+                "input": {
+                  "blockId": "{{ d1a2b3c4-e5f6-7890-abcd-ef1234567893[\"nodeId\"] }}",
+                  "content": "📧 Suggested Outreach:\n{{ e1a2b3c4-d5f6-7890-abcd-ef1234567894[\"result\"] }}\n\n📊 AI Insights: {{ a1b2c3d4-e5f6-7890-abcd-ef1234567890[\"recommendedAction\"] }}\n🔗 HubSpot: {{ trigger[\"contactUrl\"] }}",
+                  "position": "beforeend",
+                  "projectId": {
+                    "type": "flow-template-variable-input-type",
+                    "id": "StSWm4DaeTHoxpFw"
+                  }
+                }
+              }
+            }
+          ]
+        },
+        {
+          "name": "g1a2b3c4-d5e6-7890-abcd-ef1234567896",
+          "valid": true,
+          "displayName": "⚡ Medium-Quality Lead",
+          "type": "BRANCH_PATH",
+          "settings": {
+            "ruleset": {
+              "type": "CUSTOM",
+              "input": {
+                "type": "or",
+                "value": [
+                  {
+                    "type": "and",
+                    "value": [
+                      {
+                        "condition": "text_matches",
+                        "id": "a3bff0fa-dbba-4681-9e27-104358d5c262",
+                        "data": "{{ a1b2c3d4-e5f6-7890-abcd-ef1234567890[\"leadQuality\"] }}",
+                        "comparator": "medium"
+                      }
+                    ]
+                  }
+                ]
+              }
+            }
+          },
+          "actions": [
+            {
+              "name": "h1a2b3c4-d5e6-7890-abcd-ef1234567897",
+              "valid": false,
+              "displayName": "Create Standard Follow-Up Task",
+              "type": "PIECE",
+              "settings": {
+                "pieceName": "@taskade/automade-internalpiece-taskade",
+                "pieceVersion": "BLANK",
+                "actionName": "task.create",
+                "input": {
+                  "fields": {
+                    "@cli01": {
+                      "data": {
+                        "value": "{{ trigger[\"firstName\"] }} {{ trigger[\"lastName\"] }}"
+                      },
+                      "rank": "0",
+                      "fieldId": "@cli01"
+                    },
+                    "@prio7": {
+                      "data": {
+                        "value": "opt-med"
+                      },
+                      "rank": "3",
+                      "fieldId": "@prio7"
+                    },
+                    "@proj2": {
+                      "data": {
+                        "value": "{{ a1b2c3d4-e5f6-7890-abcd-ef1234567890[\"industry\"] }}"
+                      },
+                      "rank": "1",
+                      "fieldId": "@proj2"
+                    },
+                    "@stat3": {
+                      "data": {
+                        "value": "opt-planning"
+                      },
+                      "rank": "2",
+                      "fieldId": "@stat3"
+                    }
+                  },
+                  "content": "⚡ Follow-up: {{ trigger[\"firstName\"] }} {{ trigger[\"lastName\"] }} - {{ a1b2c3d4-e5f6-7890-abcd-ef1234567890[\"industry\"] }}",
+                  "position": "beforeend",
+                  "projectId": {
+                    "type": "flow-template-variable-input-type",
+                    "id": "StSWm4DaeTHoxpFw"
+                  }
+                }
+              }
+            },
+            {
+              "name": "i1a2b3c4-d5e6-7890-abcd-ef1234567898",
+              "valid": true,
+              "displayName": "Check Urgency Level",
+              "type": "BRANCH",
+              "settings": {},
+              "paths": [
+                {
+                  "name": "j1a2b3c4-d5e6-7890-abcd-ef1234567899",
+                  "valid": true,
+                  "displayName": "Immediate Urgency",
+                  "type": "BRANCH_PATH",
+                  "settings": {
+                    "ruleset": {
+                      "type": "CUSTOM",
+                      "input": {
+                        "type": "or",
+                        "value": [
+                          {
+                            "type": "and",
+                            "value": [
+                              {
+                                "condition": "text_matches",
+                                "id": "84f283ab-e2d8-4f7f-a7d0-327846c29ef7",
+                                "data": "{{ a1b2c3d4-e5f6-7890-abcd-ef1234567890[\"urgency\"] }}",
+                                "comparator": "immediate"
+                              }
+                            ]
+                          }
+                        ]
+                      }
+                    }
+                  },
+                  "actions": [
+                    {
+                      "name": "k1a2b3c4-d5e6-7890-abcd-ef1234567800",
+                      "valid": false,
+                      "displayName": "Schedule Same-Day Outreach",
+                      "type": "PIECE",
+                      "settings": {
+                        "pieceName": "@taskade/automade-internalpiece-taskade",
+                        "pieceVersion": "BLANK",
+                        "actionName": "task.create",
+                        "input": {
+                          "fields": {
+                            "@prio7": {
+                              "data": {
+                                "value": "opt-high"
+                              },
+                              "rank": "0",
+                              "fieldId": "@prio7"
+                            }
+                          },
+                          "blockId": "{{ h1a2b3c4-d5e6-7890-abcd-ef1234567897[\"nodeId\"] }}",
+                          "content": "⏰ URGENT: Contact today - High urgency detected",
+                          "position": "beforeend",
+                          "projectId": {
+                            "type": "flow-template-variable-input-type",
+                            "id": "StSWm4DaeTHoxpFw"
+                          }
+                        }
+                      }
+                    }
+                  ]
+                },
+                {
+                  "name": "l1a2b3c4-d5e6-7890-abcd-ef1234567801",
+                  "valid": true,
+                  "displayName": "Normal Timeline",
+                  "type": "BRANCH_PATH",
+                  "settings": {
+                    "ruleset": {
+                      "type": "FALLBACK"
+                    }
+                  },
+                  "actions": [
+                    {
+                      "name": "m1a2b3c4-d5e6-7890-abcd-ef1234567802",
+                      "valid": false,
+                      "displayName": "Schedule 48-Hour Follow-Up",
+                      "type": "PIECE",
+                      "settings": {
+                        "pieceName": "@taskade/automade-internalpiece-taskade",
+                        "pieceVersion": "BLANK",
+                        "actionName": "task.create",
+                        "input": {
+                          "fields": {
+                            "@prio7": {
+                              "data": {
+                                "value": "opt-med"
+                              },
+                              "rank": "0",
+                              "fieldId": "@prio7"
+                            }
+                          },
+                          "blockId": "{{ h1a2b3c4-d5e6-7890-abcd-ef1234567897[\"nodeId\"] }}",
+                          "content": "📅 Follow up within 48 hours\n🔗 HubSpot: {{ trigger[\"contactUrl\"] }}",
+                          "position": "beforeend",
+                          "projectId": {
+                            "type": "flow-template-variable-input-type",
+                            "id": "StSWm4DaeTHoxpFw"
+                          }
+                        }
+                      }
+                    }
+                  ]
+                }
+              ]
+            }
+          ]
+        },
+        {
+          "name": "n1a2b3c4-d5e6-7890-abcd-ef1234567803",
+          "valid": true,
+          "displayName": "📋 Low-Priority/Nurture",
+          "type": "BRANCH_PATH",
+          "settings": {
+            "ruleset": {
+              "type": "FALLBACK"
+            }
+          },
+          "actions": [
+            {
+              "name": "o1a2b3c4-d5e6-7890-abcd-ef1234567804",
+              "valid": false,
+              "displayName": "Add to Nurture List",
+              "type": "PIECE",
+              "settings": {
+                "pieceName": "@taskade/automade-internalpiece-taskade",
+                "pieceVersion": "BLANK",
+                "actionName": "task.create",
+                "input": {
+                  "fields": {
+                    "@cli01": {
+                      "data": {
+                        "value": "{{ trigger[\"firstName\"] }} {{ trigger[\"lastName\"] }}"
+                      },
+                      "rank": "0",
+                      "fieldId": "@cli01"
+                    },
+                    "@prio7": {
+                      "data": {
+                        "value": "opt-low"
+                      },
+                      "rank": "3",
+                      "fieldId": "@prio7"
+                    },
+                    "@proj2": {
+                      "data": {
+                        "value": "Nurture Campaign"
+                      },
+                      "rank": "1",
+                      "fieldId": "@proj2"
+                    },
+                    "@stat3": {
+                      "data": {
+                        "value": "opt-hold"
+                      },
+                      "rank": "2",
+                      "fieldId": "@stat3"
+                    }
+                  },
+                  "content": "📋 Nurture: {{ trigger[\"firstName\"] }} {{ trigger[\"lastName\"] }} - {{ trigger[\"email\"] }}",
+                  "position": "beforeend",
+                  "projectId": {
+                    "type": "flow-template-variable-input-type",
+                    "id": "StSWm4DaeTHoxpFw"
+                  }
+                }
+              }
+            },
+            {
+              "name": "p1a2b3c4-d5e6-7890-abcd-ef1234567805",
+              "valid": false,
+              "displayName": "Add to Communication Hub",
+              "type": "PIECE",
+              "settings": {
+                "pieceName": "@taskade/automade-internalpiece-taskade",
+                "pieceVersion": "BLANK",
+                "actionName": "task.create",
+                "input": {
+                  "content": "📬 Newsletter: Add {{ trigger[\"email\"] }} to nurture campaign ({{ a1b2c3d4-e5f6-7890-abcd-ef1234567890[\"industry\"] }})",
+                  "position": "beforeend",
+                  "projectId": {
+                    "type": "flow-template-variable-input-type",
+                    "id": "Xpy6gkXdWBbZnpAT"
+                  }
+                }
+              }
+            }
+          ]
+        }
+      ]
+    }
+  ],
+  "variables": {
+    "StSWm4DaeTHoxpFw": {
+      "id": "StSWm4DaeTHoxpFw",
+      "rank": "V",
+      "type": "string",
+      "format": "taskade-project-id"
+    },
+    "Xpy6gkXdWBbZnpAT": {
+      "id": "Xpy6gkXdWBbZnpAT",
+      "rank": "k",
+      "type": "string",
+      "format": "taskade-project-id"
+    }
+  }
+}

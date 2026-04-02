@@ -1,0 +1,88 @@
+{
+  "version": "2",
+  "flowTitle": "Auto-Add Google Drive Files to Repository",
+  "trigger": {
+    "valid": false,
+    "displayName": "When File Uploaded to Google Drive",
+    "type": "PIECE_TRIGGER",
+    "settings": {
+      "pieceName": "@taskade/automade-piece-google-drive",
+      "pieceVersion": "BLANK",
+      "triggerName": "new_fileV2",
+      "input": {}
+    }
+  },
+  "actions": [
+    {
+      "name": "a1b2c3d4-e5f6-7890-abcd-ef1234567890",
+      "valid": false,
+      "displayName": "Add File to Repository",
+      "type": "PIECE",
+      "settings": {
+        "pieceName": "@taskade/automade-internalpiece-taskade",
+        "pieceVersion": "BLANK",
+        "actionName": "task.create",
+        "input": {
+          "fields": {
+            "@file4": {
+              "data": {
+                "value": "{{ trigger[\"file\"] }}"
+              },
+              "rank": "0",
+              "fieldId": "@file4"
+            },
+            "@ftyp6": {
+              "data": {
+                "value": "opt-other"
+              },
+              "rank": "2",
+              "fieldId": "@ftyp6"
+            },
+            "@furl1": {
+              "data": {
+                "value": "{{ trigger[\"fileUrl\"] }}"
+              },
+              "rank": "1",
+              "fieldId": "@furl1"
+            },
+            "@proj5": {
+              "data": {
+                "value": "Google Drive"
+              },
+              "rank": "3",
+              "fieldId": "@proj5"
+            },
+            "@upby9": {
+              "data": {
+                "value": "opt-automation"
+              },
+              "rank": "4",
+              "fieldId": "@upby9"
+            },
+            "@vers0": {
+              "data": {
+                "value": "1.0"
+              },
+              "rank": "5",
+              "fieldId": "@vers0"
+            }
+          },
+          "content": "{{ trigger[\"file\"] }}",
+          "position": "beforeend",
+          "projectId": {
+            "type": "flow-template-variable-input-type",
+            "id": "o2Y68eJy8cc4wsrB"
+          }
+        }
+      }
+    }
+  ],
+  "variables": {
+    "o2Y68eJy8cc4wsrB": {
+      "id": "o2Y68eJy8cc4wsrB",
+      "rank": "V",
+      "type": "string",
+      "format": "taskade-project-id"
+    }
+  }
+}

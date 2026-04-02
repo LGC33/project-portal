@@ -1,0 +1,1280 @@
+{
+  "root": {
+    "type": "root",
+    "children": [
+      {
+        "type": "text",
+        "id": "b2c3d4e5-f678-9012-bcde-f12345678901",
+        "text": {
+          "ops": [
+            {
+              "insert": "Communication Hub"
+            },
+            {
+              "insert": "\n",
+              "attributes": {
+                "paragraph": true
+              }
+            }
+          ]
+        },
+        "format": null,
+        "collapsed": false,
+        "completed": false,
+        "children": [
+          {
+            "type": "text",
+            "id": "d0123456-7890-1234-d567-890123456789",
+            "text": {
+              "ops": [
+                {
+                  "insert": "Logo revisions look fantastic! Can we adjust the shade of green slightly?",
+                  "attributes": {}
+                },
+                {
+                  "insert": "\n",
+                  "attributes": {
+                    "paragraph": true
+                  }
+                }
+              ]
+            },
+            "format": {
+              "node": "checkbox",
+              "children": null
+            },
+            "collapsed": false,
+            "completed": false,
+            "attributes": {
+              "@from8": "Sarah Chen - Greenfield Organics",
+              "@clie9": "Greenfield Organics",
+              "@subj0": "Brand Identity Feedback",
+              "@msg11": "The logo concepts are beautiful. Love direction #2. Could we make the green 10% warmer?",
+              "@type2": {
+                "type": "Select",
+                "optionId": "opt-msg"
+              },
+              "@read3": {
+                "type": "Select",
+                "optionId": "opt-read"
+              }
+            },
+            "children": []
+          },
+          {
+            "type": "text",
+            "id": "e1234567-8901-2345-e678-901234567890",
+            "text": {
+              "ops": [
+                {
+                  "insert": "Milestone completed: Website redesign mockups approved ✓",
+                  "attributes": {}
+                },
+                {
+                  "insert": "\n",
+                  "attributes": {
+                    "paragraph": true
+                  }
+                }
+              ]
+            },
+            "format": {
+              "node": "checkbox",
+              "children": null
+            },
+            "collapsed": false,
+            "completed": false,
+            "attributes": {
+              "@from8": "Portal System",
+              "@clie9": "Acme Corporation",
+              "@subj0": "Project Milestone Achieved",
+              "@msg11": "Great progress! The homepage and product page mockups have been approved.",
+              "@type2": {
+                "type": "Select",
+                "optionId": "opt-notif"
+              },
+              "@read3": {
+                "type": "Select",
+                "optionId": "opt-read"
+              }
+            },
+            "children": []
+          },
+          {
+            "type": "text",
+            "id": "f2345678-9012-3456-f789-012345678901",
+            "text": {
+              "ops": [
+                {
+                  "insert": "New files uploaded: Mobile app wireframes v2.3",
+                  "attributes": {}
+                },
+                {
+                  "insert": "\n",
+                  "attributes": {
+                    "paragraph": true
+                  }
+                }
+              ]
+            },
+            "format": {
+              "node": "checkbox",
+              "children": null
+            },
+            "collapsed": false,
+            "completed": false,
+            "attributes": {
+              "@from8": "Development Team",
+              "@clie9": "TechStart Inc",
+              "@subj0": "File Upload Notification",
+              "@msg11": "Updated wireframes with navigation improvements now available in Files section.",
+              "@type2": {
+                "type": "Select",
+                "optionId": "opt-notif"
+              },
+              "@read3": {
+                "type": "Select",
+                "optionId": "opt-read"
+              }
+            },
+            "children": []
+          },
+          {
+            "type": "text",
+            "id": "a3456789-0123-4567-a890-123456789012",
+            "text": {
+              "ops": [
+                {
+                  "insert": "Budget increase request for cloud infrastructure",
+                  "attributes": {}
+                },
+                {
+                  "insert": "\n",
+                  "attributes": {
+                    "paragraph": true
+                  }
+                }
+              ]
+            },
+            "format": {
+              "node": "checkbox",
+              "children": null
+            },
+            "collapsed": false,
+            "completed": false,
+            "attributes": {
+              "@from8": "Mike Torres - FinanceHub",
+              "@clie9": "FinanceHub Solutions",
+              "@subj0": "Budget Adjustment Request",
+              "@msg11": "We need additional resources for redundancy. Can we discuss a 15% budget increase?",
+              "@type2": {
+                "type": "Select",
+                "optionId": "opt-msg"
+              },
+              "@read3": {
+                "type": "Select",
+                "optionId": "opt-read"
+              }
+            },
+            "children": []
+          },
+          {
+            "type": "text",
+            "id": "b4567890-1234-5678-b901-234567890123",
+            "text": {
+              "ops": [
+                {
+                  "insert": "Daily digest: 3 projects updated, 2 files added, 1 message received",
+                  "attributes": {}
+                },
+                {
+                  "insert": "\n",
+                  "attributes": {
+                    "paragraph": true
+                  }
+                }
+              ]
+            },
+            "format": {
+              "node": "checkbox",
+              "children": null
+            },
+            "collapsed": false,
+            "completed": false,
+            "attributes": {
+              "@from8": "Portal System",
+              "@clie9": "All Clients",
+              "@subj0": "Daily Activity Summary",
+              "@msg11": "Your daily summary for January 22, 2025",
+              "@type2": {
+                "type": "Select",
+                "optionId": "opt-notif"
+              },
+              "@read3": {
+                "type": "Select",
+                "optionId": "opt-read"
+              }
+            },
+            "children": []
+          },
+          {
+            "type": "text",
+            "id": "7ab00aa3-b52e-4338-b883-8d3f31da4f4b",
+            "text": {
+              "ops": [
+                {
+                  "insert": "New file uploaded: acme-homepage-mockup-v3.fig"
+                },
+                {
+                  "insert": "\n",
+                  "attributes": {
+                    "paragraph": true
+                  }
+                }
+              ]
+            },
+            "format": {
+              "node": "checkbox",
+              "children": null
+            },
+            "collapsed": false,
+            "completed": false,
+            "attributes": {
+              "@from8": "File Management System",
+              "@clie9": "acme-homepage-mockup-v3.fig",
+              "@subj0": "New File Uploaded",
+              "@msg11": "A new file has been uploaded to the repository: acme-homepage-mockup-v3.fig",
+              "@type2": {
+                "type": "Select",
+                "optionId": "opt-notif"
+              },
+              "@read3": {
+                "type": "Select",
+                "optionId": "opt-read"
+              }
+            },
+            "children": []
+          },
+          {
+            "type": "text",
+            "id": "caaaa956-46c1-4b0c-a65b-92e1237d8120",
+            "text": {
+              "ops": [
+                {
+                  "insert": "New file uploaded: techstart-wireframes-v2.3.pdf"
+                },
+                {
+                  "insert": "\n",
+                  "attributes": {
+                    "paragraph": true
+                  }
+                }
+              ]
+            },
+            "format": {
+              "node": "checkbox",
+              "children": null
+            },
+            "collapsed": false,
+            "completed": false,
+            "attributes": {
+              "@from8": "File Management System",
+              "@clie9": "techstart-wireframes-v2.3.pdf",
+              "@subj0": "New File Uploaded",
+              "@msg11": "A new file has been uploaded to the repository: techstart-wireframes-v2.3.pdf",
+              "@type2": {
+                "type": "Select",
+                "optionId": "opt-notif"
+              },
+              "@read3": {
+                "type": "Select",
+                "optionId": "opt-read"
+              }
+            },
+            "children": []
+          },
+          {
+            "type": "text",
+            "id": "3a316f48-97ed-4a00-a094-fd3c1f54f86a",
+            "text": {
+              "ops": [
+                {
+                  "insert": "New file uploaded: greenfield-brand-guidelines.pdf"
+                },
+                {
+                  "insert": "\n",
+                  "attributes": {
+                    "paragraph": true
+                  }
+                }
+              ]
+            },
+            "format": {
+              "node": "checkbox",
+              "children": null
+            },
+            "collapsed": false,
+            "completed": false,
+            "attributes": {
+              "@from8": "File Management System",
+              "@clie9": "greenfield-brand-guidelines.pdf",
+              "@subj0": "New File Uploaded",
+              "@msg11": "A new file has been uploaded to the repository: greenfield-brand-guidelines.pdf",
+              "@type2": {
+                "type": "Select",
+                "optionId": "opt-notif"
+              },
+              "@read3": {
+                "type": "Select",
+                "optionId": "opt-read"
+              }
+            },
+            "children": []
+          },
+          {
+            "type": "text",
+            "id": "63fd97dd-32da-481a-80e4-59f7e3c3e972",
+            "text": {
+              "ops": [
+                {
+                  "insert": "New file uploaded: financehub-architecture-diagram.png"
+                },
+                {
+                  "insert": "\n",
+                  "attributes": {
+                    "paragraph": true
+                  }
+                }
+              ]
+            },
+            "format": {
+              "node": "checkbox",
+              "children": null
+            },
+            "collapsed": false,
+            "completed": false,
+            "attributes": {
+              "@from8": "File Management System",
+              "@clie9": "financehub-architecture-diagram.png",
+              "@subj0": "New File Uploaded",
+              "@msg11": "A new file has been uploaded to the repository: financehub-architecture-diagram.png",
+              "@type2": {
+                "type": "Select",
+                "optionId": "opt-notif"
+              },
+              "@read3": {
+                "type": "Select",
+                "optionId": "opt-read"
+              }
+            },
+            "children": []
+          },
+          {
+            "type": "text",
+            "id": "43c9453d-ee49-4b10-858b-6805e25ff3e6",
+            "text": {
+              "ops": [
+                {
+                  "insert": "Project milestone update: TechStart Mobile App Development status changed"
+                },
+                {
+                  "insert": "\n",
+                  "attributes": {
+                    "paragraph": true
+                  }
+                }
+              ]
+            },
+            "format": {
+              "node": "checkbox",
+              "children": null
+            },
+            "collapsed": false,
+            "completed": false,
+            "attributes": {
+              "@from8": "Project Management System",
+              "@clie9": "Client Projects Database",
+              "@subj0": "Project Milestone Update",
+              "@msg11": "Status update for TechStart Mobile App Development - Check your project dashboard for details",
+              "@type2": {
+                "type": "Select",
+                "optionId": "opt-notif"
+              },
+              "@read3": {
+                "type": "Select",
+                "optionId": "opt-read"
+              }
+            },
+            "children": []
+          },
+          {
+            "type": "text",
+            "id": "5a6ab717-732a-4733-b90c-26ab47fea71e",
+            "text": {
+              "ops": [
+                {
+                  "insert": "Project milestone update: Greenfield Brand Identity Package status changed"
+                },
+                {
+                  "insert": "\n",
+                  "attributes": {
+                    "paragraph": true
+                  }
+                }
+              ]
+            },
+            "format": {
+              "node": "checkbox",
+              "children": null
+            },
+            "collapsed": false,
+            "completed": false,
+            "attributes": {
+              "@from8": "Project Management System",
+              "@clie9": "Client Projects Database",
+              "@subj0": "Project Milestone Update",
+              "@msg11": "Status update for Greenfield Brand Identity Package - Check your project dashboard for details",
+              "@type2": {
+                "type": "Select",
+                "optionId": "opt-notif"
+              },
+              "@read3": {
+                "type": "Select",
+                "optionId": "opt-read"
+              }
+            },
+            "children": []
+          },
+          {
+            "type": "text",
+            "id": "67b13ae8-9ab9-4967-a017-1748f24d9e92",
+            "text": {
+              "ops": [
+                {
+                  "insert": "Project milestone update: FinanceHub Dashboard Migration status changed"
+                },
+                {
+                  "insert": "\n",
+                  "attributes": {
+                    "paragraph": true
+                  }
+                }
+              ]
+            },
+            "format": {
+              "node": "checkbox",
+              "children": null
+            },
+            "collapsed": false,
+            "completed": false,
+            "attributes": {
+              "@from8": "Project Management System",
+              "@clie9": "Client Projects Database",
+              "@subj0": "Project Milestone Update",
+              "@msg11": "Status update for FinanceHub Dashboard Migration - Check your project dashboard for details",
+              "@type2": {
+                "type": "Select",
+                "optionId": "opt-notif"
+              },
+              "@read3": {
+                "type": "Select",
+                "optionId": "opt-read"
+              }
+            },
+            "children": []
+          },
+          {
+            "type": "text",
+            "id": "a247afbc-3af5-45d7-aaee-cb6608f1e975",
+            "text": {
+              "ops": [
+                {
+                  "insert": "Project milestone update: RetailPro E-commerce Integration status changed"
+                },
+                {
+                  "insert": "\n",
+                  "attributes": {
+                    "paragraph": true
+                  }
+                }
+              ]
+            },
+            "format": {
+              "node": "checkbox",
+              "children": null
+            },
+            "collapsed": false,
+            "completed": false,
+            "attributes": {
+              "@from8": "Project Management System",
+              "@clie9": "Client Projects Database",
+              "@subj0": "Project Milestone Update",
+              "@msg11": "Status update for RetailPro E-commerce Integration - Check your project dashboard for details",
+              "@type2": {
+                "type": "Select",
+                "optionId": "opt-notif"
+              },
+              "@read3": {
+                "type": "Select",
+                "optionId": "opt-read"
+              }
+            },
+            "children": []
+          }
+        ]
+      }
+    ],
+    "fields": {
+      "@from8": {
+        "displayName": "From",
+        "type": "string"
+      },
+      "@clie9": {
+        "displayName": "Client",
+        "type": "string"
+      },
+      "@subj0": {
+        "displayName": "Subject",
+        "type": "string"
+      },
+      "@msg11": {
+        "displayName": "Message",
+        "type": "string"
+      },
+      "@type2": {
+        "displayName": "Type",
+        "type": "Select",
+        "options": {
+          "opt-msg": {
+            "id": "opt-msg",
+            "name": "Message",
+            "rank": "0",
+            "color": "#3b82f6"
+          },
+          "opt-notif": {
+            "id": "opt-notif",
+            "name": "Notification",
+            "rank": "1",
+            "color": "#8b5cf6"
+          },
+          "opt-alert": {
+            "id": "opt-alert",
+            "name": "Alert",
+            "rank": "2",
+            "color": "#ef4444"
+          }
+        }
+      },
+      "@read3": {
+        "displayName": "Read Status",
+        "type": "Select",
+        "options": {
+          "opt-unread": {
+            "id": "opt-unread",
+            "name": "Unread",
+            "rank": "0",
+            "color": "#3b82f6"
+          },
+          "opt-read": {
+            "id": "opt-read",
+            "name": "Read",
+            "rank": "1",
+            "color": "#94a3b8"
+          }
+        }
+      }
+    },
+    "views": {
+      "list": {
+        "id": "list",
+        "type": "list",
+        "rank": "A",
+        "displayedFields": {
+          "/text": {
+            "id": "/text",
+            "fieldPath": "/text",
+            "rank": "7"
+          },
+          "/attributes/agent": {
+            "id": "/attributes/agent",
+            "fieldPath": "/attributes/agent",
+            "rank": "A"
+          },
+          "/attributes/date": {
+            "id": "/attributes/date",
+            "fieldPath": "/attributes/date",
+            "rank": "F"
+          },
+          "/attributes/assignee": {
+            "id": "/attributes/assignee",
+            "fieldPath": "/attributes/assignee",
+            "rank": "N"
+          },
+          "/attributes/comment": {
+            "id": "/attributes/comment",
+            "fieldPath": "/attributes/comment",
+            "rank": "V"
+          },
+          "/attributes/reaction": {
+            "id": "/attributes/reaction",
+            "fieldPath": "/attributes/reaction",
+            "rank": "c"
+          },
+          "/attributes/timer": {
+            "id": "/attributes/timer",
+            "fieldPath": "/attributes/timer",
+            "rank": "k"
+          },
+          "/attributes/media": {
+            "id": "/attributes/media",
+            "fieldPath": "/attributes/media",
+            "rank": "s"
+          },
+          "/attributes/created/at": {
+            "id": "/attributes/created/at",
+            "fieldPath": "/attributes/created/at",
+            "rank": "t"
+          },
+          "/attributes/created/by": {
+            "id": "/attributes/created/by",
+            "fieldPath": "/attributes/created/by",
+            "rank": "u"
+          },
+          "/attributes/updated/at": {
+            "id": "/attributes/updated/at",
+            "fieldPath": "/attributes/updated/at",
+            "rank": "vF"
+          },
+          "/attributes/updated/by": {
+            "id": "/attributes/updated/by",
+            "fieldPath": "/attributes/updated/by",
+            "rank": "wF"
+          },
+          "/attributes/completed/at": {
+            "id": "/attributes/completed/at",
+            "fieldPath": "/attributes/completed/at",
+            "rank": "x"
+          },
+          "/attributes/completed/by": {
+            "id": "/attributes/completed/by",
+            "fieldPath": "/attributes/completed/by",
+            "rank": "y"
+          },
+          "/attributes/@from8": {
+            "id": "/attributes/@from8",
+            "fieldPath": "/attributes/@from8",
+            "rank": "z"
+          },
+          "/attributes/@clie9": {
+            "id": "/attributes/@clie9",
+            "fieldPath": "/attributes/@clie9",
+            "rank": "zV"
+          },
+          "/attributes/@subj0": {
+            "id": "/attributes/@subj0",
+            "fieldPath": "/attributes/@subj0",
+            "rank": "zk"
+          },
+          "/attributes/@msg11": {
+            "id": "/attributes/@msg11",
+            "fieldPath": "/attributes/@msg11",
+            "rank": "zs"
+          },
+          "/attributes/@type2": {
+            "id": "/attributes/@type2",
+            "fieldPath": "/attributes/@type2",
+            "rank": "zw"
+          },
+          "/attributes/@read3": {
+            "id": "/attributes/@read3",
+            "fieldPath": "/attributes/@read3",
+            "rank": "zy"
+          }
+        }
+      },
+      "board": {
+        "id": "board",
+        "type": "board",
+        "rank": "B",
+        "displayedFields": {
+          "/text": {
+            "id": "/text",
+            "fieldPath": "/text",
+            "rank": "7"
+          },
+          "/attributes/agent": {
+            "id": "/attributes/agent",
+            "fieldPath": "/attributes/agent",
+            "rank": "A"
+          },
+          "/attributes/date": {
+            "id": "/attributes/date",
+            "fieldPath": "/attributes/date",
+            "rank": "F"
+          },
+          "/attributes/assignee": {
+            "id": "/attributes/assignee",
+            "fieldPath": "/attributes/assignee",
+            "rank": "N"
+          },
+          "/attributes/comment": {
+            "id": "/attributes/comment",
+            "fieldPath": "/attributes/comment",
+            "rank": "V"
+          },
+          "/attributes/reaction": {
+            "id": "/attributes/reaction",
+            "fieldPath": "/attributes/reaction",
+            "rank": "c"
+          },
+          "/attributes/timer": {
+            "id": "/attributes/timer",
+            "fieldPath": "/attributes/timer",
+            "rank": "k"
+          },
+          "/attributes/media": {
+            "id": "/attributes/media",
+            "fieldPath": "/attributes/media",
+            "rank": "s"
+          },
+          "/attributes/created/at": {
+            "id": "/attributes/created/at",
+            "fieldPath": "/attributes/created/at",
+            "rank": "t"
+          },
+          "/attributes/created/by": {
+            "id": "/attributes/created/by",
+            "fieldPath": "/attributes/created/by",
+            "rank": "u"
+          },
+          "/attributes/updated/at": {
+            "id": "/attributes/updated/at",
+            "fieldPath": "/attributes/updated/at",
+            "rank": "vF"
+          },
+          "/attributes/updated/by": {
+            "id": "/attributes/updated/by",
+            "fieldPath": "/attributes/updated/by",
+            "rank": "wF"
+          },
+          "/attributes/completed/at": {
+            "id": "/attributes/completed/at",
+            "fieldPath": "/attributes/completed/at",
+            "rank": "x"
+          },
+          "/attributes/completed/by": {
+            "id": "/attributes/completed/by",
+            "fieldPath": "/attributes/completed/by",
+            "rank": "y"
+          },
+          "/attributes/@from8": {
+            "id": "/attributes/@from8",
+            "fieldPath": "/attributes/@from8",
+            "rank": "z"
+          },
+          "/attributes/@clie9": {
+            "id": "/attributes/@clie9",
+            "fieldPath": "/attributes/@clie9",
+            "rank": "zV"
+          },
+          "/attributes/@subj0": {
+            "id": "/attributes/@subj0",
+            "fieldPath": "/attributes/@subj0",
+            "rank": "zk"
+          },
+          "/attributes/@msg11": {
+            "id": "/attributes/@msg11",
+            "fieldPath": "/attributes/@msg11",
+            "rank": "zs"
+          },
+          "/attributes/@type2": {
+            "id": "/attributes/@type2",
+            "fieldPath": "/attributes/@type2",
+            "rank": "zw"
+          },
+          "/attributes/@read3": {
+            "id": "/attributes/@read3",
+            "fieldPath": "/attributes/@read3",
+            "rank": "zy"
+          }
+        }
+      },
+      "mindmap": {
+        "id": "mindmap",
+        "type": "mindmap",
+        "rank": "D",
+        "displayedFields": {
+          "/text": {
+            "id": "/text",
+            "fieldPath": "/text",
+            "rank": "7"
+          },
+          "/attributes/agent": {
+            "id": "/attributes/agent",
+            "fieldPath": "/attributes/agent",
+            "rank": "A"
+          },
+          "/attributes/date": {
+            "id": "/attributes/date",
+            "fieldPath": "/attributes/date",
+            "rank": "F"
+          },
+          "/attributes/assignee": {
+            "id": "/attributes/assignee",
+            "fieldPath": "/attributes/assignee",
+            "rank": "N"
+          },
+          "/attributes/comment": {
+            "id": "/attributes/comment",
+            "fieldPath": "/attributes/comment",
+            "rank": "V"
+          },
+          "/attributes/reaction": {
+            "id": "/attributes/reaction",
+            "fieldPath": "/attributes/reaction",
+            "rank": "c"
+          },
+          "/attributes/timer": {
+            "id": "/attributes/timer",
+            "fieldPath": "/attributes/timer",
+            "rank": "k"
+          },
+          "/attributes/media": {
+            "id": "/attributes/media",
+            "fieldPath": "/attributes/media",
+            "rank": "s"
+          },
+          "/attributes/created/at": {
+            "id": "/attributes/created/at",
+            "fieldPath": "/attributes/created/at",
+            "rank": "t"
+          },
+          "/attributes/created/by": {
+            "id": "/attributes/created/by",
+            "fieldPath": "/attributes/created/by",
+            "rank": "u"
+          },
+          "/attributes/updated/at": {
+            "id": "/attributes/updated/at",
+            "fieldPath": "/attributes/updated/at",
+            "rank": "vF"
+          },
+          "/attributes/updated/by": {
+            "id": "/attributes/updated/by",
+            "fieldPath": "/attributes/updated/by",
+            "rank": "wF"
+          },
+          "/attributes/completed/at": {
+            "id": "/attributes/completed/at",
+            "fieldPath": "/attributes/completed/at",
+            "rank": "x"
+          },
+          "/attributes/completed/by": {
+            "id": "/attributes/completed/by",
+            "fieldPath": "/attributes/completed/by",
+            "rank": "y"
+          },
+          "/attributes/@from8": {
+            "id": "/attributes/@from8",
+            "fieldPath": "/attributes/@from8",
+            "rank": "z"
+          },
+          "/attributes/@clie9": {
+            "id": "/attributes/@clie9",
+            "fieldPath": "/attributes/@clie9",
+            "rank": "zV"
+          },
+          "/attributes/@subj0": {
+            "id": "/attributes/@subj0",
+            "fieldPath": "/attributes/@subj0",
+            "rank": "zk"
+          },
+          "/attributes/@msg11": {
+            "id": "/attributes/@msg11",
+            "fieldPath": "/attributes/@msg11",
+            "rank": "zs"
+          },
+          "/attributes/@type2": {
+            "id": "/attributes/@type2",
+            "fieldPath": "/attributes/@type2",
+            "rank": "zw"
+          },
+          "/attributes/@read3": {
+            "id": "/attributes/@read3",
+            "fieldPath": "/attributes/@read3",
+            "rank": "zy"
+          }
+        }
+      },
+      "orgchart": {
+        "id": "orgchart",
+        "type": "orgchart",
+        "rank": "E",
+        "displayedFields": {
+          "/text": {
+            "id": "/text",
+            "fieldPath": "/text",
+            "rank": "7"
+          },
+          "/attributes/agent": {
+            "id": "/attributes/agent",
+            "fieldPath": "/attributes/agent",
+            "rank": "A"
+          },
+          "/attributes/date": {
+            "id": "/attributes/date",
+            "fieldPath": "/attributes/date",
+            "rank": "F"
+          },
+          "/attributes/assignee": {
+            "id": "/attributes/assignee",
+            "fieldPath": "/attributes/assignee",
+            "rank": "N"
+          },
+          "/attributes/comment": {
+            "id": "/attributes/comment",
+            "fieldPath": "/attributes/comment",
+            "rank": "V"
+          },
+          "/attributes/reaction": {
+            "id": "/attributes/reaction",
+            "fieldPath": "/attributes/reaction",
+            "rank": "c"
+          },
+          "/attributes/timer": {
+            "id": "/attributes/timer",
+            "fieldPath": "/attributes/timer",
+            "rank": "k"
+          },
+          "/attributes/media": {
+            "id": "/attributes/media",
+            "fieldPath": "/attributes/media",
+            "rank": "s"
+          },
+          "/attributes/created/at": {
+            "id": "/attributes/created/at",
+            "fieldPath": "/attributes/created/at",
+            "rank": "t"
+          },
+          "/attributes/created/by": {
+            "id": "/attributes/created/by",
+            "fieldPath": "/attributes/created/by",
+            "rank": "u"
+          },
+          "/attributes/updated/at": {
+            "id": "/attributes/updated/at",
+            "fieldPath": "/attributes/updated/at",
+            "rank": "vF"
+          },
+          "/attributes/updated/by": {
+            "id": "/attributes/updated/by",
+            "fieldPath": "/attributes/updated/by",
+            "rank": "wF"
+          },
+          "/attributes/completed/at": {
+            "id": "/attributes/completed/at",
+            "fieldPath": "/attributes/completed/at",
+            "rank": "x"
+          },
+          "/attributes/completed/by": {
+            "id": "/attributes/completed/by",
+            "fieldPath": "/attributes/completed/by",
+            "rank": "y"
+          },
+          "/attributes/@from8": {
+            "id": "/attributes/@from8",
+            "fieldPath": "/attributes/@from8",
+            "rank": "z"
+          },
+          "/attributes/@clie9": {
+            "id": "/attributes/@clie9",
+            "fieldPath": "/attributes/@clie9",
+            "rank": "zV"
+          },
+          "/attributes/@subj0": {
+            "id": "/attributes/@subj0",
+            "fieldPath": "/attributes/@subj0",
+            "rank": "zk"
+          },
+          "/attributes/@msg11": {
+            "id": "/attributes/@msg11",
+            "fieldPath": "/attributes/@msg11",
+            "rank": "zs"
+          },
+          "/attributes/@type2": {
+            "id": "/attributes/@type2",
+            "fieldPath": "/attributes/@type2",
+            "rank": "zw"
+          },
+          "/attributes/@read3": {
+            "id": "/attributes/@read3",
+            "fieldPath": "/attributes/@read3",
+            "rank": "zy"
+          }
+        }
+      },
+      "gantt": {
+        "id": "gantt",
+        "type": "gantt",
+        "rank": "F",
+        "columns": {
+          "/text": {
+            "id": "/text",
+            "fieldPath": "/text",
+            "rank": "7",
+            "width": 480
+          },
+          "/attributes/agent": {
+            "id": "/attributes/agent",
+            "fieldPath": "/attributes/agent",
+            "rank": "A",
+            "hidden": true
+          },
+          "/attributes/date": {
+            "id": "/attributes/date",
+            "fieldPath": "/attributes/date",
+            "rank": "F",
+            "hidden": true
+          },
+          "/attributes/assignee": {
+            "id": "/attributes/assignee",
+            "fieldPath": "/attributes/assignee",
+            "rank": "N",
+            "hidden": true
+          },
+          "/attributes/comment": {
+            "id": "/attributes/comment",
+            "fieldPath": "/attributes/comment",
+            "rank": "V",
+            "hidden": true
+          },
+          "/attributes/reaction": {
+            "id": "/attributes/reaction",
+            "fieldPath": "/attributes/reaction",
+            "rank": "c",
+            "hidden": true
+          },
+          "/attributes/timer": {
+            "id": "/attributes/timer",
+            "fieldPath": "/attributes/timer",
+            "rank": "k",
+            "hidden": true
+          },
+          "/attributes/media": {
+            "id": "/attributes/media",
+            "fieldPath": "/attributes/media",
+            "rank": "s",
+            "hidden": true
+          },
+          "/attributes/created/at": {
+            "id": "/attributes/created/at",
+            "fieldPath": "/attributes/created/at",
+            "rank": "t",
+            "hidden": true
+          },
+          "/attributes/created/by": {
+            "id": "/attributes/created/by",
+            "fieldPath": "/attributes/created/by",
+            "rank": "u",
+            "hidden": true
+          },
+          "/attributes/updated/at": {
+            "id": "/attributes/updated/at",
+            "fieldPath": "/attributes/updated/at",
+            "rank": "vF",
+            "hidden": true
+          },
+          "/attributes/updated/by": {
+            "id": "/attributes/updated/by",
+            "fieldPath": "/attributes/updated/by",
+            "rank": "wF",
+            "hidden": true
+          },
+          "/attributes/completed/at": {
+            "id": "/attributes/completed/at",
+            "fieldPath": "/attributes/completed/at",
+            "rank": "x",
+            "hidden": true
+          },
+          "/attributes/completed/by": {
+            "id": "/attributes/completed/by",
+            "fieldPath": "/attributes/completed/by",
+            "rank": "y",
+            "hidden": true
+          },
+          "/attributes/@from8": {
+            "id": "/attributes/@from8",
+            "fieldPath": "/attributes/@from8",
+            "rank": "z",
+            "hidden": false
+          },
+          "/attributes/@clie9": {
+            "id": "/attributes/@clie9",
+            "fieldPath": "/attributes/@clie9",
+            "rank": "zV",
+            "hidden": false
+          },
+          "/attributes/@subj0": {
+            "id": "/attributes/@subj0",
+            "fieldPath": "/attributes/@subj0",
+            "rank": "zk",
+            "hidden": false
+          },
+          "/attributes/@msg11": {
+            "id": "/attributes/@msg11",
+            "fieldPath": "/attributes/@msg11",
+            "rank": "zs",
+            "hidden": false
+          },
+          "/attributes/@type2": {
+            "id": "/attributes/@type2",
+            "fieldPath": "/attributes/@type2",
+            "rank": "zw",
+            "hidden": false
+          },
+          "/attributes/@read3": {
+            "id": "/attributes/@read3",
+            "fieldPath": "/attributes/@read3",
+            "rank": "zy",
+            "hidden": false
+          }
+        }
+      },
+      "table": {
+        "id": "table",
+        "type": "table",
+        "rank": "V",
+        "columns": {
+          "/text": {
+            "id": "/text",
+            "fieldPath": "/text",
+            "rank": "7",
+            "width": 480
+          },
+          "/attributes/agent": {
+            "id": "/attributes/agent",
+            "fieldPath": "/attributes/agent",
+            "rank": "A",
+            "hidden": true
+          },
+          "/attributes/date": {
+            "id": "/attributes/date",
+            "fieldPath": "/attributes/date",
+            "rank": "F",
+            "hidden": true
+          },
+          "/attributes/assignee": {
+            "id": "/attributes/assignee",
+            "fieldPath": "/attributes/assignee",
+            "rank": "N",
+            "hidden": true
+          },
+          "/attributes/comment": {
+            "id": "/attributes/comment",
+            "fieldPath": "/attributes/comment",
+            "rank": "V",
+            "hidden": true
+          },
+          "/attributes/reaction": {
+            "id": "/attributes/reaction",
+            "fieldPath": "/attributes/reaction",
+            "rank": "c",
+            "hidden": true
+          },
+          "/attributes/timer": {
+            "id": "/attributes/timer",
+            "fieldPath": "/attributes/timer",
+            "rank": "k",
+            "hidden": true
+          },
+          "/attributes/media": {
+            "id": "/attributes/media",
+            "fieldPath": "/attributes/media",
+            "rank": "s",
+            "hidden": true
+          },
+          "/attributes/created/at": {
+            "id": "/attributes/created/at",
+            "fieldPath": "/attributes/created/at",
+            "rank": "t",
+            "hidden": true
+          },
+          "/attributes/created/by": {
+            "id": "/attributes/created/by",
+            "fieldPath": "/attributes/created/by",
+            "rank": "u",
+            "hidden": true
+          },
+          "/attributes/updated/at": {
+            "id": "/attributes/updated/at",
+            "fieldPath": "/attributes/updated/at",
+            "rank": "vF",
+            "hidden": true
+          },
+          "/attributes/updated/by": {
+            "id": "/attributes/updated/by",
+            "fieldPath": "/attributes/updated/by",
+            "rank": "wF",
+            "hidden": true
+          },
+          "/attributes/completed/at": {
+            "id": "/attributes/completed/at",
+            "fieldPath": "/attributes/completed/at",
+            "rank": "x",
+            "hidden": true
+          },
+          "/attributes/completed/by": {
+            "id": "/attributes/completed/by",
+            "fieldPath": "/attributes/completed/by",
+            "rank": "y",
+            "hidden": true
+          },
+          "/attributes/@from8": {
+            "id": "/attributes/@from8",
+            "fieldPath": "/attributes/@from8",
+            "rank": "z",
+            "hidden": false
+          },
+          "/attributes/@clie9": {
+            "id": "/attributes/@clie9",
+            "fieldPath": "/attributes/@clie9",
+            "rank": "zV",
+            "hidden": false
+          },
+          "/attributes/@subj0": {
+            "id": "/attributes/@subj0",
+            "fieldPath": "/attributes/@subj0",
+            "rank": "zk",
+            "hidden": false
+          },
+          "/attributes/@msg11": {
+            "id": "/attributes/@msg11",
+            "fieldPath": "/attributes/@msg11",
+            "rank": "zs",
+            "hidden": false
+          },
+          "/attributes/@type2": {
+            "id": "/attributes/@type2",
+            "fieldPath": "/attributes/@type2",
+            "rank": "zw",
+            "hidden": false
+          },
+          "/attributes/@read3": {
+            "id": "/attributes/@read3",
+            "fieldPath": "/attributes/@read3",
+            "rank": "zy",
+            "hidden": false
+          }
+        },
+        "rowHeight": "xl"
+      }
+    }
+  },
+  "preferences": {
+    "defaultView": "table",
+    "avatar": {
+      "type": "emoji",
+      "value": "🔋"
+    }
+  }
+}

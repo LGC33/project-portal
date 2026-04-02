@@ -1,0 +1,99 @@
+{
+  "version": "2",
+  "flowTitle": "Project Milestone Tracker",
+  "trigger": {
+    "valid": false,
+    "displayName": "When Project Status Changes",
+    "type": "PIECE_TRIGGER",
+    "settings": {
+      "pieceName": "@taskade/automade-internalpiece-taskade",
+      "pieceVersion": "BLANK",
+      "triggerName": "task.custom_attribute_updated",
+      "input": {
+        "fieldId": "@stat3",
+        "projectId": {
+          "type": "flow-template-variable-input-type",
+          "id": "StSWm4DaeTHoxpFw"
+        }
+      }
+    }
+  },
+  "actions": [
+    {
+      "name": "c3d4e5f6-7890-1234-5678-901234abcdef",
+      "valid": false,
+      "displayName": "Send Milestone Notification",
+      "type": "PIECE",
+      "settings": {
+        "pieceName": "@taskade/automade-internalpiece-taskade",
+        "pieceVersion": "BLANK",
+        "actionName": "task.create",
+        "input": {
+          "fields": {
+            "@clie9": {
+              "data": {
+                "value": "{{ trigger[\"projectTitle\"] }}"
+              },
+              "rank": "1",
+              "fieldId": "@clie9"
+            },
+            "@from8": {
+              "data": {
+                "value": "Project Management System"
+              },
+              "rank": "0",
+              "fieldId": "@from8"
+            },
+            "@msg11": {
+              "data": {
+                "value": "Status update for {{ trigger[\"nodeText\"] }} - Check your project dashboard for details"
+              },
+              "rank": "3",
+              "fieldId": "@msg11"
+            },
+            "@read3": {
+              "data": {
+                "value": "opt-unread"
+              },
+              "rank": "5",
+              "fieldId": "@read3"
+            },
+            "@subj0": {
+              "data": {
+                "value": "Project Milestone Update"
+              },
+              "rank": "2",
+              "fieldId": "@subj0"
+            },
+            "@type2": {
+              "data": {
+                "value": "opt-notif"
+              },
+              "rank": "4",
+              "fieldId": "@type2"
+            }
+          },
+          "content": "Project milestone update: {{ trigger[\"nodeText\"] }} status changed",
+          "projectId": {
+            "type": "flow-template-variable-input-type",
+            "id": "Xpy6gkXdWBbZnpAT"
+          }
+        }
+      }
+    }
+  ],
+  "variables": {
+    "StSWm4DaeTHoxpFw": {
+      "id": "StSWm4DaeTHoxpFw",
+      "rank": "V",
+      "type": "string",
+      "format": "taskade-project-id"
+    },
+    "Xpy6gkXdWBbZnpAT": {
+      "id": "Xpy6gkXdWBbZnpAT",
+      "rank": "k",
+      "type": "string",
+      "format": "taskade-project-id"
+    }
+  }
+}

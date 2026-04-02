@@ -1,0 +1,87 @@
+{
+  "version": "2",
+  "flowTitle": "File Upload Notification",
+  "trigger": {
+    "valid": false,
+    "displayName": "When File is Added",
+    "type": "PIECE_TRIGGER",
+    "settings": {
+      "pieceName": "@taskade/automade-internalpiece-taskade",
+      "pieceVersion": "BLANK",
+      "triggerName": "task.added",
+      "input": {}
+    }
+  },
+  "actions": [
+    {
+      "name": "b2c3d4e5-f678-9012-3456-7890abcdef12",
+      "valid": false,
+      "displayName": "Send File Upload Notification",
+      "type": "PIECE",
+      "settings": {
+        "pieceName": "@taskade/automade-internalpiece-taskade",
+        "pieceVersion": "BLANK",
+        "actionName": "task.create",
+        "input": {
+          "fields": {
+            "@clie9": {
+              "data": {
+                "value": "{{ trigger[\"nodeText\"] }}"
+              },
+              "rank": "1",
+              "fieldId": "@clie9"
+            },
+            "@from8": {
+              "data": {
+                "value": "File Management System"
+              },
+              "rank": "0",
+              "fieldId": "@from8"
+            },
+            "@msg11": {
+              "data": {
+                "value": "A new file has been uploaded to the repository: {{ trigger[\"nodeText\"] }}"
+              },
+              "rank": "3",
+              "fieldId": "@msg11"
+            },
+            "@read3": {
+              "data": {
+                "value": "opt-unread"
+              },
+              "rank": "5",
+              "fieldId": "@read3"
+            },
+            "@subj0": {
+              "data": {
+                "value": "New File Uploaded"
+              },
+              "rank": "2",
+              "fieldId": "@subj0"
+            },
+            "@type2": {
+              "data": {
+                "value": "opt-notif"
+              },
+              "rank": "4",
+              "fieldId": "@type2"
+            }
+          },
+          "content": "New file uploaded: {{ trigger[\"nodeText\"] }}",
+          "projectId": {
+            "type": "flow-template-variable-input-type",
+            "id": "Xpy6gkXdWBbZnpAT"
+          }
+        }
+      }
+    }
+  ],
+  "variables": {
+    "Xpy6gkXdWBbZnpAT": {
+      "id": "Xpy6gkXdWBbZnpAT",
+      "rank": "V",
+      "type": "string",
+      "format": "taskade-project-id"
+    }
+  }
+}
